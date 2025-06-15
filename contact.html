@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zapfinance - Contact</title>
+    <link rel="stylesheet" href="/styles.css">
+    <script src="/script.js" defer></script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <img src="/Asset_ZapFinance/zapfinance logo.png" alt="Zapfinance">
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">HOME PAGE</a></li>
+                <li><a href="#" class="nav-link">WHO WE ARE</a></li>
+                <li><a href="#" class="nav-link">RESOURCES</a></li>
+                <li><a href="#" class="nav-link">OUR SERVICES</a></li>
+                <li><a href="#" class="nav-link">QUICK CHECK-UP</a></li>
+                <li><a href="contact.html" class="nav-link active">CONTACT</a></li>
+                <li><a href="solutions.html" class="nav-link">SOLUTIONS</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Contact Hero -->
+    <section class="contact-hero">
+        <div class="contact-hero-container">
+            <h1>We would love to hear from you</h1>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="map-section">
+        <div class="map-container">
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.2!2d106.8!3d-6.2!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNsKwMTInMDAuMCJTIDEwNsKwNDgnMDAuMCJF!5e0!3m2!1sen!2sid!4v1234567890"
+                width="100%" 
+                height="400" 
+                style="border:0;" 
+                allowfullscreen="" 
+                loading="lazy">
+            </iframe>
+        </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section class="contact-main">
+        <div class="contact-main-container">
+            <div class="contact-info">
+                <h2>Kirimkan Pesan</h2>
+                <p>Anda dapat menggunakan halaman ini untuk memberikan komentar atau pertanyaan tentang perusahaan atau produk-produk kami</p>
+            </div>
+            <div class="contact-form-wrapper">
+                <form class="contact-form-main" onsubmit="handleContactSubmit(event)">
+                    <input type="text" placeholder="Nama" name="name" required>
+                    <input type="tel" placeholder="No. Handphone (Whatsapp)" name="phone" required>
+                    <input type="email" placeholder="Alamat Email" name="email" required>
+                    <input type="text" placeholder="Subjek Pesan" name="subject" required>
+                    <textarea placeholder="Tulis Pesan" name="message" rows="5" required></textarea>
+                    <button type="submit" class="btn-primary hover-btn">KIRIM PESAN</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-logo">
+                <img src="/Asset_ZapFinance/ZapFinance Footer Logo.png" alt="Zapfinance">
+            </div>
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Alamat</h4>
+                    <p>PT Zapfindo Arzieta Perdana</p>
+                    <p>Epiwalk Office Suite<br>Lantai 6, unit B601</p>
+                    <p>Jl. Epicentrum Boulevard Barat,<br>Kuningan, Jakarta Selatan 12940</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Kontak</h4>
+                    <p>(021) 2991-2258 (tel)</p>
+                    <p>(021) 2991-2257 (fax)</p>
+                    <p class="whatsapp-link" onclick="openWhatsApp()">0811-8992-280 (WhatsApp)</p>
+                    <a href="mailto:info@zapfinance.co.id">info@zapfinance.co.id</a>
+                </div>
+                <div class="footer-section">
+                    <h4>Social Media</h4>
+                    <div class="social-links">
+                        <a href="#" class="social-link" onclick="openInstagram(event)">
+                            <img src="/Asset_ZapFinance/Instagram Logo.png" alt="Instagram" class="social-icon">
+                            zapfinance
+                        </a>
+                        <a href="#" class="social-link" onclick="openTwitter(event)">
+                            <img src="/Asset_ZapFinance/X logo.png" alt="X" class="social-icon">
+                            zapfinance
+                        </a>
+                        <a href="#" class="social-link" onclick="openFacebook(event)">
+                            <img src="/Asset_ZapFinance/Facebook Logo.png" alt="Facebook" class="social-icon">
+                            zapfinanceconsulting
+                        </a>
+                        <a href="#" class="social-link" onclick="openTikTok(event)">
+                            <img src="/Asset_ZapFinance/TikTok Logo.png" alt="TikTok" class="social-icon">
+                            zapfinanceofficial
+                        </a>
+                        <a href="#" class="social-link" onclick="openShopee(event)">
+                            <img src="/Asset_ZapFinance/Shopee Logo.png" alt="Shopee" class="social-icon">
+                            ZAPfincorner
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© copyright Zapfinance 2025</p>
+            <button class="btn-back-to-top" onclick="scrollToTop()">KEMBALI KE ATAS</button>
+        </div>
+    </footer>
+</body>
+</html>

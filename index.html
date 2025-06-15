@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zapfinance - Home</title>
+    <link rel="stylesheet" href="/styles.css">
+    <script src="/script.js" defer></script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <img src="/Asset_ZapFinance/zapfinance logo.png" alt="Zapfinance">
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link active">HOME PAGE</a></li>
+                <li><a href="#" class="nav-link">WHO WE ARE</a></li>
+                <li><a href="#" class="nav-link">RESOURCES</a></li>
+                <li><a href="#" class="nav-link">OUR SERVICES</a></li>
+                <li><a href="#" class="nav-link">QUICK CHECK-UP</a></li>
+                <li><a href="contact.html" class="nav-link">CONTACT</a></li>
+                <li><a href="solutions.html" class="nav-link">SOLUTIONS</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <p class="hero-subtitle">Melalui kerjasama dengan pakar berpengalaman tinggi</p>
+                <h1 class="hero-title">Memberikan informasi dan pelatihan untuk membantu tercapainya kesejahteraan keuangan.</h1>
+                <p class="hero-description">Zapfinance hadir untuk membantu para pengusaha finansial keuangan untuk mencapai tujuan mereka sejak 2009</p>
+                <button class="btn-primary" onclick="scrollToServices()">OUR SERVICES</button>
+                <button class="btn-secondary" onclick="scrollToClasses()">Join Class with Zapfinance Academy</button>
+            </div>
+            <div class="hero-image">
+                <img src="/Asset_ZapFinance/HomePage Header.png" alt="Financial consultation">
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="services-container">
+            <div class="service-card">
+                <div class="service-image">
+                    <img src="/Asset_ZapFinance/Homepage Academy & Consulting.png" alt="Zapfinance Academy">
+                    <div class="service-overlay">
+                        <h3>Zapfinance Academy</h3>
+                        <p>Kursus online untuk Anda dapat belajar mengelola keuangan dengan baik dan benar</p>
+                        <button class="btn-info hover-btn" onclick="handleMoreInfo('academy')">MORE INFO</button>
+                    </div>
+                </div>
+            </div>
+            <div class="service-card">
+                <div class="service-image">
+                    <img src="/Asset_ZapFinance/Homepage Academy & Consulting.png" alt="Zapfinance Consulting">
+                    <div class="service-overlay">
+                        <h3>Zapfinance Consulting</h3>
+                        <p>Jasa konsultasi keuangan yang disesuaikan dengan kebutuhan Anda untuk mencapai tujuan keuangan</p>
+                        <button class="btn-info hover-btn" onclick="handleMoreInfo('consulting')">MORE INFO</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Classes Section -->
+    <section id="classes" class="classes">
+        <div class="classes-container">
+            <h2>Zapfinance Academy</h2>
+            <h3>Kelas yang Akan Datang</h3>
+            <div class="classes-grid">
+                <div class="class-card hover-card" onclick="handleClassClick('cfp-review')">
+                    <img src="/Asset_ZapFinance/Homepage Kelas 1.png" alt="CFP Review">
+                    <div class="class-info">
+                        <h4>Certified Financial Planner (CFP®) Review - Fast Track (Batch 3)</h4>
+                        <p class="class-date">Date: 9 May 2025</p>
+                        <p class="class-price">Price: Rp 3.500.000</p>
+                    </div>
+                </div>
+                <div class="class-card hover-card" onclick="handleClassClick('bcfp-online')">
+                    <img src="/Asset_ZapFinance/Homepage Kelas 2.png" alt="BCFP Online">
+                    <div class="class-info">
+                        <h4>BCFP Online Value & Investasi A to Z Beli Rumah Tinggal</h4>
+                        <p class="class-date">Date: 8 May 2025</p>
+                        <p class="class-price">Price: Rp 750.000</p>
+                    </div>
+                </div>
+                <div class="class-card hover-card" onclick="handleClassClick('financial-hacks')">
+                    <img src="/Asset_ZapFinance/Homepage Kelas 3.png" alt="Financial Hacks">
+                    <div class="class-info">
+                        <h4>Financial Hacks for Parents: Raising Money-Smart Kids Batch 4</h4>
+                        <p class="class-date">Date: 9 May 2025</p>
+                        <p class="class-price">Price: Rp 350.000</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quote Section -->
+    <section class="quote-section">
+        <div class="quote-container">
+            <p class="quote-text">Kami percaya bahwa masyarakat akan menjadi lebih sejahtera yang lebih baik dan bermakna dengan perencanaan keuangan (Financial Planning) yang berperspektif dan literasi keuangan (Financial Literacy) yang luas.</p>
+            <button class="btn-primary hover-btn" onclick="handleWhoWeAre()">WHO WE ARE</button>
+        </div>
+    </section>
+
+    <!-- Resources Section -->
+    <section class="resources">
+        <div class="resources-container">
+            <div class="resources-content">
+                <h2>RESOURCES</h2>
+                <h3>Zapfinance Articles</h3>
+                <p>Baca beragam tips dan artikel untuk memperkaya pengetahuan anda mengenai perencanaan keuangan yang baik dan benar.</p>
+                <button class="btn-primary hover-btn" onclick="handleViewAllArticles()">Lihat Semua Artikel</button>
+            </div>
+            <div class="resources-images">
+                <img src="/Asset_ZapFinance/Homepage Artikel 1.jpeg" alt="Article 1">
+                <img src="/Asset_ZapFinance/Homepage Artikel 2.jpg" alt="Article 2">
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section class="contact-form-section">
+        <div class="contact-form-container">
+            <h2>Apakah anda ingin berkomunikasi lebih lanjut dengan kami?</h2>
+            <p>Lengkapi data diri Anda agar kami dapat segera menghubungi Anda.</p>
+            <form class="contact-form" onsubmit="handleFormSubmit(event)">
+                <input type="text" placeholder="Bantuan yang diperlukan" name="help" required>
+                <input type="text" placeholder="Nama" name="name" required>
+                <input type="tel" placeholder="Nomor Telepon" name="phone" required>
+                <button type="submit" class="btn-primary hover-btn">Kirim Data Diri</button>
+            </form>
+            <p class="contact-note">Anda juga dapat mengirimkan email ke <a href="mailto:info@zapfinance.co.id">info@zapfinance.co.id</a></p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-logo">
+                <img src="/Asset_ZapFinance/ZapFinance Footer Logo.png" alt="Zapfinance">
+            </div>
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Alamat</h4>
+                    <p>PT Zapfindo Arzieta Perdana</p>
+                    <p>Epiwalk Office Suite<br>Lantai 6, unit B601</p>
+                    <p>Jl. Epicentrum Boulevard Barat,<br>Kuningan, Jakarta Selatan 12940</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Kontak</h4>
+                    <p>(021) 2991-2258 (tel)</p>
+                    <p>(021) 2991-2257 (fax)</p>
+                    <p class="whatsapp-link" onclick="openWhatsApp()">0811-8992-280 (WhatsApp)</p>
+                    <a href="mailto:info@zapfinance.co.id">info@zapfinance.co.id</a>
+                </div>
+                <div class="footer-section">
+                    <h4>Social Media</h4>
+                    <div class="social-links">
+                        <a href="#" class="social-link" onclick="openInstagram(event)">
+                            <img src="/Asset_ZapFinance/Instagram Logo.png" alt="Instagram" class="social-icon">
+                            zapfinance
+                        </a>
+                        <a href="#" class="social-link" onclick="openTwitter(event)">
+                            <img src="/Asset_ZapFinance/X logo.png" alt="X" class="social-icon">
+                            zapfinance
+                        </a>
+                        <a href="#" class="social-link" onclick="openFacebook(event)">
+                            <img src="/Asset_ZapFinance/Facebook Logo.png" alt="Facebook" class="social-icon">
+                            zapfinanceconsulting
+                        </a>
+                        <a href="#" class="social-link" onclick="openTikTok(event)">
+                            <img src="/Asset_ZapFinance/TikTok Logo.png" alt="TikTok" class="social-icon">
+                            zapfinanceofficial
+                        </a>
+                        <a href="#" class="social-link" onclick="openShopee(event)">
+                            <img src="/Asset_ZapFinance/Shopee Logo.png" alt="Shopee" class="social-icon">
+                            ZAPfincorner
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© copyright Zapfinance 2025</p>
+            <button class="btn-back-to-top" onclick="scrollToTop()">KEMBALI KE ATAS</button>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zapfinance - Solutions</title>
+    <link rel="stylesheet" href="/styles.css">
+    <script src="/script.js" defer></script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <img src="/Asset_ZapFinance/zapfinance logo.png" alt="Zapfinance">
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">HOME PAGE</a></li>
+                <li><a href="#" class="nav-link">WHO WE ARE</a></li>
+                <li><a href="#" class="nav-link">RESOURCES</a></li>
+                <li><a href="#" class="nav-link">OUR SERVICES</a></li>
+                <li><a href="#" class="nav-link">QUICK CHECK-UP</a></li>
+                <li><a href="contact.html" class="nav-link">CONTACT</a></li>
+                <li><a href="solutions.html" class="nav-link active">SOLUTIONS</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="solutions-hero">
+        <div class="solutions-hero-container">
+            <div class="solutions-hero-image">
+                <img src="/Asset_ZapFinance/Solutions Consulting.png" alt="Consulting">
+            </div>
+            <div class="solutions-hero-content">
+                <h1>Consulting</h1>
+                <p>Karyawan yang sehat secara finansial cenderung lebih produktif dan bahagia. Namun, banyak yang masih kesulitan mengelola keuangan karena penghasilan terbatas, kenaikan biaya hidup, dan inflasi.</p>
+                <p>Kami percaya bahwa solusi bukan sekadar memberi bantuan sementara, tapi membekali individu dengan pengetahuan dan alat untuk merencanakan keuangan secara bijak. Dengan perencanaan yang tepat, kualitas hidup dan kesejahteraan finansial dapat tercapai bersama.</p>
+                <button class="btn-primary" onclick="scrollToConsulting()">SEMUA PRODUK CONSULTING</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Program Consulting Section -->
+    <section id="consulting" class="program-consulting">
+        <div class="program-consulting-container">
+            <h2>Program<br>Consulting</h2>
+            <div class="consulting-items">
+                <div class="consulting-item hover-card" onclick="handleConsultingClick('content')">
+                    <h3>01. Content Creation Management</h3>
+                </div>
+                <div class="consulting-item hover-card" onclick="handleConsultingClick('group')">
+                    <h3>02. Group Financial Coaching</h3>
+                </div>
+                <div class="consulting-item hover-card" onclick="handleConsultingClick('one-on-one')">
+                    <h3>03. 1-On-1 Financial Consultation</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-logo">
+                <img src="/Asset_ZapFinance/ZapFinance Footer Logo.png" alt="Zapfinance">
+            </div>
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Alamat</h4>
+                    <p>PT Zapfindo Arzieta Perdana</p>
+                    <p>Epiwalk Office Suite<br>Lantai 6, unit B601</p>
+                    <p>Jl. Epicentrum Boulevard Barat,<br>Kuningan, Jakarta Selatan 12940</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Kontak</h4>
+                    <p>(021) 2991-2258 (tel)</p>
+                    <p>(021) 2991-2257 (fax)</p>
+                    <p class="whatsapp-link" onclick="openWhatsApp()">0811-8992-280 (WhatsApp)</p>
+                    <a href="mailto:info@zapfinance.co.id">info@zapfinance.co.id</a>
+                </div>
+                <div class="footer-section">
+                    <h4>Social Media</h4>
+                    <div class="social-links">
+                        <a href="#" class="social-link" onclick="openInstagram(event)">
+                            <img src="/Asset_ZapFinance/Instagram Logo.png" alt="Instagram" class="social-icon">
+                            zapfinance
+                        </a>
+                        <a href="#" class="social-link" onclick="openTwitter(event)">
+                            <img src="/Asset_ZapFinance/X logo.png" alt="X" class="social-icon">
+                            zapfinance
+                        </a>
+                        <a href="#" class="social-link" onclick="openFacebook(event)">
+                            <img src="/Asset_ZapFinance/Facebook Logo.png" alt="Facebook" class="social-icon">
+                            zapfinanceconsulting
+                        </a>
+                        <a href="#" class="social-link" onclick="openTikTok(event)">
+                            <img src="/Asset_ZapFinance/TikTok Logo.png" alt="TikTok" class="social-icon">
+                            zapfinanceofficial
+                        </a>
+                        <a href="#" class="social-link" onclick="openShopee(event)">
+                            <img src="/Asset_ZapFinance/Shopee Logo.png" alt="Shopee" class="social-icon">
+                            ZAPfincorner
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© copyright Zapfinance 2025</p>
+            <button class="btn-back-to-top" onclick="scrollToTop()">KEMBALI KE ATAS</button>
+        </div>
+    </footer>
+</body>
+</html>
